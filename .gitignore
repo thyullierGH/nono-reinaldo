@@ -1,0 +1,12 @@
+# Dependencias de Node
+node_modules/
+
+# Compilación de Angular (la genera Cloudflare en cada deploy)
+web/dist/
+web/.angular/
+
+# Sistema y editores
+Thumbs.db
+.DS_Store
+.vscode/
+*.log

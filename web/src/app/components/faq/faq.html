@@ -1,0 +1,12 @@
+<section id="faq">
+  <div class="contenedor">
+    <h2 class="centrado">Preguntas frecuentes</h2>
+    <p class="sub centrado">Respondemos las dudas antes de que las tengas.</p>
+    @for (p of preguntas; track p.pregunta; let i = $index) {
+      <details [appReveal]="i">
+        <summary>{{ p.pregunta }}</summary>
+        <p>{{ p.respuesta }}</p>
+      </details>
+    }
+  </div>
+</section>

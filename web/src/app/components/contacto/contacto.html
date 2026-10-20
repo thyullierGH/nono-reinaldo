@@ -1,0 +1,57 @@
+<section id="contacto" class="contacto">
+  <div class="contacto-grid">
+    <div class="contacto-panel">
+      <h2>Contactanos</h2>
+      <form [formGroup]="formulario" (ngSubmit)="enviar()">
+        <div class="fila-doble">
+          <label>
+            Nombre
+            <input
+              type="text"
+              formControlName="nombre"
+              required
+              autocomplete="name"
+              placeholder="Nombre"
+            >
+          </label>
+          <label>
+            Teléfono
+            <input type="tel" formControlName="telefono" autocomplete="tel" placeholder="Teléfono">
+          </label>
+        </div>
+        <label>
+          E-mail
+          <input type="email" formControlName="email" autocomplete="email" placeholder="E-mail">
+        </label>
+        <label>
+          Empresa
+          <input type="text" formControlName="empresa" autocomplete="organization" placeholder="Empresa">
+        </label>
+        <label>
+          Tu consulta
+          <textarea formControlName="consulta" rows="4" placeholder="Tu consulta"></textarea>
+        </label>
+        <button class="btn-enviar" type="submit" [disabled]="enviando()">
+          {{ enviando() ? 'Enviando…' : 'Enviar' }}
+        </button>
+        @if (aviso(); as a) {
+          <p class="aviso {{ a.tipo }}" role="status">{{ a.texto }}</p>
+        }
+      </form>
+      <ul class="datos">
+        <li>
+          <i class="bi bi-instagram"></i>
+          <a [href]="instagramUrl" target="_blank" rel="noopener">@nonoreinaldo</a>
+        </li>
+        <li>
+          <i class="bi bi-geo-alt"></i>
+          <a [href]="mapaUrl" target="_blank" rel="noopener">Ver ubicación en el mapa</a>
+        </li>
+        <li>
+          <i class="bi bi-whatsapp"></i>
+          <a [href]="waUrl" target="_blank" rel="noopener">WhatsApp directo</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>

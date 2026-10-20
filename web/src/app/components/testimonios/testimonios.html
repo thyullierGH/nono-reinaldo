@@ -1,0 +1,14 @@
+<section class="claro">
+  <div class="contenedor">
+    <h2 class="centrado">Lo que dicen nuestros clientes</h2>
+    <p class="sub centrado">[Provisorio] Reemplazar por opiniones reales, con nombre y negocio.</p>
+    <div class="tarjetas">
+      @for (t of testimonios; track $index; let i = $index) {
+        <blockquote class="tarjeta testimonio" [appReveal]="i">
+          {{ t.cita }}
+          <footer>{{ t.autor }}</footer>
+        </blockquote>
+      }
+    </div>
+  </div>
+</section>

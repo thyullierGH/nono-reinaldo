@@ -1,0 +1,15 @@
+<section id="beneficios" class="claro">
+  <div class="contenedor">
+    <h2 class="centrado">Lo que ganás trabajando con nosotros</h2>
+    <p class="sub centrado">Tres razones por las que nuestros clientes vuelven a pedir.</p>
+    <div class="tarjetas">
+      @for (b of beneficios; track b.titulo; let i = $index) {
+        <article class="tarjeta" [appReveal]="i">
+          <div class="icono"><i class="bi {{ b.icono }}"></i></div>
+          <h3>{{ b.titulo }}</h3>
+          <p>{{ b.texto }}</p>
+        </article>
+      }
+    </div>
+  </div>
+</section>

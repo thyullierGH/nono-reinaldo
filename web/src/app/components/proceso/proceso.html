@@ -1,0 +1,14 @@
+<section id="proceso">
+  <div class="contenedor">
+    <h2 class="centrado">Empezar es muy simple</h2>
+    <p class="sub centrado">Sin vueltas ni trámites largos.</p>
+    <div class="pasos">
+      @for (p of pasos; track p.titulo; let i = $index) {
+        <div class="paso" [appReveal]="i">
+          <h3>{{ p.titulo }}</h3>
+          <p>{{ p.texto }}</p>
+        </div>
+      }
+    </div>
+  </div>
+</section>

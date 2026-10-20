@@ -1,0 +1,6 @@
+# robots.txt — Nono Reinaldo
+# Permite todo a los buscadores y apunta al sitemap.
+User-agent: *
+Allow: /
+
+Sitemap: https://nonoreinaldo.com.ar/sitemap.xml

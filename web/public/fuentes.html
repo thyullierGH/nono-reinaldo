@@ -1,0 +1,355 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tipografías · Nono Reinaldo</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;700;800&family=Poppins:wght@400;500;700;800&family=Montserrat:wght@400;500;700;800&family=Manrope:wght@400;500;700;800&family=DM+Sans:wght@400;500;700;800&family=Plus+Jakarta+Sans:wght@400;500;700;800&family=Sora:wght@400;500;700;800&family=Figtree:wght@400;500;700;800&family=Yellowtail&family=Great+Vibes&family=Kaushan+Script&family=Parisienne&family=Sacramento&family=Pacifico&family=Dancing+Script:wght@600;700&family=Playfair+Display:ital,wght@1,600;1,700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --tinta: #1c1c1c;
+    --texto: #5c5c5c;
+    --linea: #e4e0d8;
+    --papel: #f6f4f0;
+    --oro: #b08d4f;
+    --azul: #0a1b4a;
+  }
+  * { box-sizing: border-box; margin: 0; }
+  body {
+    background: var(--papel);
+    color: var(--tinta);
+    font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+    padding: 56px 20px 90px;
+  }
+  .envoltorio { width: min(1000px, 94%); margin-inline: auto; }
+
+  header { border-bottom: 1px solid var(--linea); padding-bottom: 22px; margin-bottom: 44px; }
+  h1 { font-size: 1.05rem; font-weight: 600; letter-spacing: .01em; }
+  header p { color: var(--texto); font-size: .88rem; margin-top: 6px; }
+
+  h2.seccion {
+    font-size: .72rem; font-weight: 700; letter-spacing: .16em; text-transform: uppercase;
+    color: var(--texto); margin: 46px 0 18px; display: flex; align-items: center; gap: 14px;
+  }
+  h2.seccion::after { content: ""; flex: 1; height: 1px; background: var(--linea); }
+  h2.seccion:first-of-type { margin-top: 0; }
+
+  .lista { display: grid; gap: 14px; }
+
+  .fuente {
+    background: #fff; border: 1px solid var(--linea); border-radius: 10px;
+    padding: 22px 26px; display: grid; grid-template-columns: 34px 1fr; gap: 20px;
+  }
+  .num {
+    font-size: .78rem; font-weight: 700; color: var(--texto);
+    border: 1px solid var(--linea); border-radius: 999px;
+    width: 30px; height: 30px; display: grid; place-items: center; background: var(--papel);
+  }
+  .cuerpo { min-width: 0; }
+  .meta {
+    display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap;
+    margin-bottom: 12px;
+  }
+  .meta .nombre { font-size: .92rem; font-weight: 700; }
+  .meta .rasgo { font-size: .8rem; color: var(--texto); }
+  .badge {
+    font-size: .6rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase;
+    border: 1px solid var(--linea); color: var(--texto); border-radius: 999px; padding: 2px 8px;
+  }
+  .ejemplo-titulo { font-size: 1.55rem; font-weight: 800; line-height: 1.2; margin-bottom: 8px; }
+  .ejemplo-texto { font-size: .92rem; font-weight: 400; line-height: 1.6; color: var(--texto); max-width: 62ch; }
+  .ejemplo-texto b { font-weight: 700; color: var(--tinta); }
+
+  /* Muestra dorada: franja de contexto con el fondo real del sitio */
+  .franja {
+    background: var(--azul); border-radius: 8px; padding: 18px 22px; margin-bottom: 10px;
+    display: flex; align-items: baseline; gap: 22px; flex-wrap: wrap;
+  }
+  .franja .oro-grande { font-size: 1.9rem; line-height: 1.1; color: var(--oro); }
+  .franja .oro-chico { font-size: 1.05rem; color: var(--oro); }
+  .franja .contexto { font-size: .78rem; color: #9fb0d8; }
+
+  .f-outfit { font-family: "Outfit", sans-serif; }
+  .f-poppins { font-family: "Poppins", sans-serif; }
+  .f-montserrat { font-family: "Montserrat", sans-serif; }
+  .f-manrope { font-family: "Manrope", sans-serif; }
+  .f-dmsans { font-family: "DM Sans", sans-serif; }
+  .f-jakarta { font-family: "Plus Jakarta Sans", sans-serif; }
+  .f-sora { font-family: "Sora", sans-serif; }
+  .f-figtree { font-family: "Figtree", sans-serif; }
+  .f-yellowtail { font-family: "Yellowtail", cursive; }
+  .f-greatvibes { font-family: "Great Vibes", cursive; }
+  .f-kaushan { font-family: "Kaushan Script", cursive; }
+  .f-parisienne { font-family: "Parisienne", cursive; }
+  .f-sacramento { font-family: "Sacramento", cursive; }
+  .f-pacifico { font-family: "Pacifico", cursive; }
+  .f-dancing { font-family: "Dancing Script", cursive; font-weight: 700; }
+  .f-playfair { font-family: "Playfair Display", serif; font-style: italic; font-weight: 700; }
+</style>
+</head>
+<body>
+<div class="envoltorio">
+
+  <header>
+    <h1>Tipografías del sitio</h1>
+    <p>Cada opción se muestra con el mismo contenido real del sitio. Elegí por número.</p>
+  </header>
+
+  <h2 class="seccion">Sección A · Fuente principal — títulos y textos</h2>
+  <div class="lista">
+
+    <article class="fuente">
+      <div class="num">1</div>
+      <div class="cuerpo">
+        <div class="meta">
+          <span class="nombre f-outfit">Outfit</span>
+          <span class="badge">Actual</span>
+          <span class="rasgo">Geométrica, moderna, amable</span>
+        </div>
+        <p class="ejemplo-titulo f-outfit">El sabor que conquista a tus clientes</p>
+        <p class="ejemplo-texto f-outfit">
+          Dulce de leche artesanal, elaborado con <b>tradición y calidad</b> para acompañar
+          el crecimiento de tu negocio. Fabricamos con la experiencia de tres generaciones.
+        </p>
+      </div>
+    </article>
+
+    <article class="fuente">
+      <div class="num">2</div>
+      <div class="cuerpo">
+        <div class="meta">
+          <span class="nombre f-poppins">Poppins</span>
+          <span class="badge">Elegida</span>
+          <span class="rasgo">Redonda, limpia, muy legible</span>
+        </div>
+        <p class="ejemplo-titulo f-poppins">El sabor que conquista a tus clientes</p>
+        <p class="ejemplo-texto f-poppins">
+          Dulce de leche artesanal, elaborado con <b>tradición y calidad</b> para acompañar
+          el crecimiento de tu negocio. Fabricamos con la experiencia de tres generaciones.
+        </p>
+      </div>
+    </article>
+
+    <article class="fuente">
+      <div class="num">3</div>
+      <div class="cuerpo">
+        <div class="meta">
+          <span class="nombre f-montserrat">Montserrat</span>
+          <span class="rasgo">Clásica, corporativa, sólida</span>
+        </div>
+        <p class="ejemplo-titulo f-montserrat">El sabor que conquista a tus clientes</p>
+        <p class="ejemplo-texto f-montserrat">
+          Dulce de leche artesanal, elaborado con <b>tradición y calidad</b> para acompañar
+          el crecimiento de tu negocio. Fabricamos con la experiencia de tres generaciones.
+        </p>
+      </div>
+    </article>
+
+    <article class="fuente">
+      <div class="num">4</div>
+      <div class="cuerpo">
+        <div class="meta">
+          <span class="nombre f-manrope">Manrope</span>
+          <span class="rasgo">Neutra, tecnológica, precisa</span>
+        </div>
+        <p class="ejemplo-titulo f-manrope">El sabor que conquista a tus clientes</p>
+        <p class="ejemplo-texto f-manrope">
+          Dulce de leche artesanal, elaborado con <b>tradición y calidad</b> para acompañar
+          el crecimiento de tu negocio. Fabricamos con la experiencia de tres generaciones.
+        </p>
+      </div>
+    </article>
+
+    <article class="fuente">
+      <div class="num">5</div>
+      <div class="cuerpo">
+        <div class="meta">
+          <span class="nombre f-dmsans">DM Sans</span>
+          <span class="rasgo">Suave, equilibrada, versátil</span>
+        </div>
+        <p class="ejemplo-titulo f-dmsans">El sabor que conquista a tus clientes</p>
+        <p class="ejemplo-texto f-dmsans">
+          Dulce de leche artesanal, elaborado con <b>tradición y calidad</b> para acompañar
+          el crecimiento de tu negocio. Fabricamos con la experiencia de tres generaciones.
+        </p>
+      </div>
+    </article>
+
+    <article class="fuente">
+      <div class="num">6</div>
+      <div class="cuerpo">
+        <div class="meta">
+          <span class="nombre f-jakarta">Plus Jakarta Sans</span>
+          <span class="rasgo">Elegante, contemporánea, premium</span>
+        </div>
+        <p class="ejemplo-titulo f-jakarta">El sabor que conquista a tus clientes</p>
+        <p class="ejemplo-texto f-jakarta">
+          Dulce de leche artesanal, elaborado con <b>tradición y calidad</b> para acompañar
+          el crecimiento de tu negocio. Fabricamos con la experiencia de tres generaciones.
+        </p>
+      </div>
+    </article>
+
+    <article class="fuente">
+      <div class="num">7</div>
+      <div class="cuerpo">
+        <div class="meta">
+          <span class="nombre f-sora">Sora</span>
+          <span class="rasgo">Escuadrada, distintiva, actual</span>
+        </div>
+        <p class="ejemplo-titulo f-sora">El sabor que conquista a tus clientes</p>
+        <p class="ejemplo-texto f-sora">
+          Dulce de leche artesanal, elaborado con <b>tradición y calidad</b> para acompañar
+          el crecimiento de tu negocio. Fabricamos con la experiencia de tres generaciones.
+        </p>
+      </div>
+    </article>
+
+    <article class="fuente">
+      <div class="num">8</div>
+      <div class="cuerpo">
+        <div class="meta">
+          <span class="nombre f-figtree">Figtree</span>
+          <span class="rasgo">Cálida, compacta, legible</span>
+        </div>
+        <p class="ejemplo-titulo f-figtree">El sabor que conquista a tus clientes</p>
+        <p class="ejemplo-texto f-figtree">
+          Dulce de leche artesanal, elaborado con <b>tradición y calidad</b> para acompañar
+          el crecimiento de tu negocio. Fabricamos con la experiencia de tres generaciones.
+        </p>
+      </div>
+    </article>
+
+  </div>
+
+  <h2 class="seccion">Sección B · Fuente dorada — elegida: Poppins italic (sin manuscrita)</h2>
+  <div class="lista">
+
+    <article class="fuente">
+      <div class="num">1</div>
+      <div class="cuerpo">
+        <div class="meta">
+          <span class="nombre f-yellowtail">Yellowtail</span>
+          <span class="badge">Actual</span>
+          <span class="rasgo">Pincel casual, cálida, artesanal</span>
+        </div>
+        <div class="franja">
+          <span class="oro-grande f-yellowtail">tus clientes.</span>
+          <span class="oro-chico f-yellowtail">Nono Reinaldo</span>
+          <span class="contexto">así se ve sobre el azul del sitio</span>
+        </div>
+      </div>
+    </article>
+
+    <article class="fuente">
+      <div class="num">2</div>
+      <div class="cuerpo">
+        <div class="meta">
+          <span class="nombre f-greatvibes">Great Vibes</span>
+          <span class="rasgo">Caligrafía formal, tradición premium</span>
+        </div>
+        <div class="franja">
+          <span class="oro-grande f-greatvibes">tus clientes.</span>
+          <span class="oro-chico f-greatvibes">Nono Reinaldo</span>
+          <span class="contexto">así se ve sobre el azul del sitio</span>
+        </div>
+      </div>
+    </article>
+
+    <article class="fuente">
+      <div class="num">3</div>
+      <div class="cuerpo">
+        <div class="meta">
+          <span class="nombre f-kaushan">Kaushan Script</span>
+          <span class="rasgo">Pincel firme, hecha a mano, con carácter</span>
+        </div>
+        <div class="franja">
+          <span class="oro-grande f-kaushan">tus clientes.</span>
+          <span class="oro-chico f-kaushan">Nono Reinaldo</span>
+          <span class="contexto">así se ve sobre el azul del sitio</span>
+        </div>
+      </div>
+    </article>
+
+    <article class="fuente">
+      <div class="num">4</div>
+      <div class="cuerpo">
+        <div class="meta">
+          <span class="nombre f-parisienne">Parisienne</span>
+          <span class="rasgo">Fina, delicada, romántica</span>
+        </div>
+        <div class="franja">
+          <span class="oro-grande f-parisienne">tus clientes.</span>
+          <span class="oro-chico f-parisienne">Nono Reinaldo</span>
+          <span class="contexto">así se ve sobre el azul del sitio</span>
+        </div>
+      </div>
+    </article>
+
+    <article class="fuente">
+      <div class="num">5</div>
+      <div class="cuerpo">
+        <div class="meta">
+          <span class="nombre f-sacramento">Sacramento</span>
+          <span class="rasgo">Manuscrita fina, minimalista</span>
+        </div>
+        <div class="franja">
+          <span class="oro-grande f-sacramento">tus clientes.</span>
+          <span class="oro-chico f-sacramento">Nono Reinaldo</span>
+          <span class="contexto">así se ve sobre el azul del sitio</span>
+        </div>
+      </div>
+    </article>
+
+    <article class="fuente">
+      <div class="num">6</div>
+      <div class="cuerpo">
+        <div class="meta">
+          <span class="nombre f-pacifico">Pacifico</span>
+          <span class="rasgo">Redonda, alegre, retro</span>
+        </div>
+        <div class="franja">
+          <span class="oro-grande f-pacifico">tus clientes.</span>
+          <span class="oro-chico f-pacifico">Nono Reinaldo</span>
+          <span class="contexto">así se ve sobre el azul del sitio</span>
+        </div>
+      </div>
+    </article>
+
+    <article class="fuente">
+      <div class="num">7</div>
+      <div class="cuerpo">
+        <div class="meta">
+          <span class="nombre f-dancing">Dancing Script</span>
+          <span class="rasgo">Movida, amigable, cercana</span>
+        </div>
+        <div class="franja">
+          <span class="oro-grande f-dancing">tus clientes.</span>
+          <span class="oro-chico f-dancing">Nono Reinaldo</span>
+          <span class="contexto">así se ve sobre el azul del sitio</span>
+        </div>
+      </div>
+    </article>
+
+    <article class="fuente">
+      <div class="num">8</div>
+      <div class="cuerpo">
+        <div class="meta">
+          <span class="nombre f-playfair">Playfair Display cursiva</span>
+          <span class="rasgo">Serif editorial, elegancia clásica</span>
+        </div>
+        <div class="franja">
+          <span class="oro-grande f-playfair">tus clientes.</span>
+          <span class="oro-chico f-playfair">Nono Reinaldo</span>
+          <span class="contexto">así se ve sobre el azul del sitio</span>
+        </div>
+      </div>
+    </article>
+
+  </div>
+
+</div>
+</body>
+</html>

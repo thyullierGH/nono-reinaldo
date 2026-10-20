@@ -1,0 +1,65 @@
+<section id="productos" class="blanco">
+  <div class="contenedor">
+    <h2 class="centrado">Nuestros productos</h2>
+    <p class="sub centrado">Presentaciones pensadas para cada tipo de negocio.</p>
+
+    <div class="carrousel" [appReveal]="0">
+      <button
+        class="flecha"
+        type="button"
+        (click)="anterior()"
+        aria-label="Producto anterior"
+      >‹</button>
+
+      <div
+        class="pista"
+        #pista
+        (pointerdown)="alBajar($event)"
+        (pointermove)="alMover($event)"
+        (pointerup)="alSoltar($event)"
+        (pointercancel)="alSoltar($event)"
+        (scroll)="alDesplazar()"
+        (click)="bloquearClick($event)"
+      >
+        @for (p of muestra; track $index) {
+          <article class="slide">
+            <div class="producto">
+              <div class="foto">
+                @if (fotoRota()) {
+                  <img [src]="p.respaldo" [alt]="p.nombre" draggable="false">
+                } @else {
+                  <img
+                    [src]="p.foto"
+                    [alt]="p.nombre"
+                    draggable="false"
+                    (error)="fotoRota.set(true)"
+                  >
+                }
+              </div>
+              <h3>{{ p.nombre }}</h3>
+            </div>
+          </article>
+        }
+      </div>
+
+      <button
+        class="flecha"
+        type="button"
+        (click)="siguiente()"
+        aria-label="Siguiente producto"
+      >›</button>
+    </div>
+
+    <div class="puntos" role="tablist" aria-label="Productos">
+      @for (p of productos; track $index) {
+        <button
+          type="button"
+          class="punto"
+          [class.activo]="indice() === $index"
+          (click)="irA($index)"
+          [attr.aria-label]="'Ir al producto ' + ($index + 1)"
+        ></button>
+      }
+    </div>
+  </div>
+</section>
