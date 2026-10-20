@@ -19,12 +19,12 @@ export class BeneficiosComponent {
     {
       icono: 'bi-building',
       titulo: 'Fabricación propia',
-      texto: 'Controlamos todo el proceso, así que la calidad es pareja en cada pedido.',
+      texto: 'Del tambo a la fabrica, y de la fabrica a tu negocio.',
     },
     {
-      icono: 'bi-truck',
-      titulo: 'Entregas confiables',
-      texto: 'Cumplimos los plazos que prometemos. Vos planificás tranquilo.',
+      icono: 'bi-patch-check-fill',
+      titulo: 'Calidad asegurda',
+      texto: 'Elaboramos a base de leche fluida. Asegurando el mejor producto para tu negocio',
     },
     {
       icono: 'bi-chat-heart',

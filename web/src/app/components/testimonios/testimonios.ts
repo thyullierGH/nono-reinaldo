@@ -14,7 +14,6 @@ interface Testimonio {
   imports: [RevealDirective],
 })
 export class TestimoniosComponent {
-  // [Provisorio] Reemplazar por opiniones reales, con nombre y negocio.
   readonly testimonios: Testimonio[] = [
     { cita: '“Texto de ejemplo de un cliente satisfecho.”', autor: 'Nombre, comercio' },
     { cita: '“Texto de ejemplo de un cliente satisfecho.”', autor: 'Nombre, comercio' },
